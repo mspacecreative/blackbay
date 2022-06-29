@@ -606,12 +606,8 @@ p:last-of-type {
 .headline h1 {
   text-transform: uppercase;
   font-family: "proxima-nova", Proxima Nova, sans-serif;
-  position: absolute;
-  bottom: -18px;
-  left: 0;
   margin-bottom: 0;
   font-weight: 900;
-  line-height: 0.8em;
 }
 
 .container, .container-fluid {
@@ -2013,9 +2009,6 @@ body:not(.wp-admin) button .hamburger-inner, body:not(.wp-admin) button.hamburge
 
 .headline h1 {
   position: relative;
-  left: auto;
-  right: auto;
-  bottom: auto;
   margin-bottom: 30px;
   font-size: 80px;
   max-width: none;
@@ -2076,9 +2069,6 @@ body:not(.wp-admin) button .hamburger-inner, body:not(.wp-admin) button.hamburge
 }
 
 @media (min-width: 1280px) {
-  .headline h1 {
-    max-width: 75%;
-  }
   .team-member button {
     margin-top: 0;
   }
@@ -2110,12 +2100,6 @@ body:not(.wp-admin) button .hamburger-inner, body:not(.wp-admin) button.hamburge
     font-size: 80px;
     bottom: -7px;
     max-width: 75%;
-  }
-}
-
-@media (min-width: 1080px) {
-  .headline h1 {
-    font-size: 7em;
   }
 }
 
@@ -2220,13 +2204,8 @@ body:not(.wp-admin) button .hamburger-inner, body:not(.wp-admin) button.hamburge
 
 @media (max-width: 768px) and (orientation: portrait) {
   .headline h1, .headline.align-right h1 {
-    position: relative;
-    right: auto;
-    left: auto;
     font-size: 40px;
-    max-width: none;
     text-align: left;
-    bottom: auto;
     margin-bottom: 20px;
   }
   #residential .et_pb_text_align_left, #commercial .et_pb_text_align_left {
