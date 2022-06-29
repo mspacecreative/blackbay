@@ -2127,7 +2127,7 @@ img[src="https://blackbaygroup.ca/wp-content/themes/blackbay/includes/img/black-
     left: auto;
   }
   .bevel-overlay {
-    background-image: url(../img/bevel-overlay-mobile.png) !important;
+    background-image: url(../../img/bevel-overlay-mobile.png) !important;
     background-position: top right 25% !important;
   }
   .bevel-overlay img {
