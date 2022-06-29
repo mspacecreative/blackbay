@@ -2014,12 +2014,6 @@ body:not(.wp-admin) button .hamburger-inner, body:not(.wp-admin) button.hamburge
   max-width: none;
 }
 
-.headline.align-right h1 {
-  max-width: none;
-  text-align: left;
-  right: auto;
-}
-
 .occupancy-date {
   margin: 2em 0 1em;
   padding: 1em;
