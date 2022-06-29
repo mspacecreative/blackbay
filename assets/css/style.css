@@ -258,6 +258,11 @@ header nav a {
 	overflow: hidden;
 }
 */
+body:not(.wp-admin) button .hamburger-inner, body:not(.wp-admin) button.hamburger span {
+  padding: 0;
+  display: table-cell;
+}
+
 #cover {
   background: #000;
   position: fixed;
