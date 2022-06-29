@@ -204,137 +204,6 @@ header nav a {
   margin: 0 0 15px;
 }
 
-.button, button span {
-  display: inline-block;
-  padding: 10px;
-}
-
-.occupancy-date {
-  border-radius: 5px;
-}
-
-.button a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 15px 8px;
-  position: relative;
-  text-transform: uppercase;
-  font: 700 15px/1em "proxima-nova", Proxima Nova, sans-serif;
-  text-align: center;
-  display: block;
-  border: 2px solid #fff;
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-.cta-button.button {
-  padding: 0;
-  margin: 25px 0 0;
-}
-
-#cta {
-  clear: left;
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  background: #fff;
-}
-
-#cta:after {
-  display: table;
-  content: '';
-  clear: both;
-}
-
-#cta .one-half:first-child {
-  float: left;
-  width: 100%;
-  position: relative;
-  right: 60%;
-}
-
-/*
-.cta {
-	float: left;
-	width: 60%;
-	position: relative;
-	left: 60%;
-	overflow: hidden;
-}
-*/
-body:not(.wp-admin) button .hamburger-inner, body:not(.wp-admin) button.hamburger span {
-  padding: 0;
-  display: table-cell;
-}
-
-#about {
-  padding-bottom: 10%;
-}
-
-.headline h1 {
-  position: relative;
-  left: auto;
-  right: auto;
-  bottom: auto;
-  margin-bottom: 30px;
-  font-size: 80px;
-  max-width: none;
-}
-
-.headline.align-right h1 {
-  max-width: none;
-  text-align: left;
-  right: auto;
-}
-
-.occupancy-date {
-  margin: 2em 0 1em;
-  padding: 1em;
-  background-color: #000;
-  color: #fff;
-  display: inline-block;
-}
-
-.occupancy-date span, .half a {
-  color: #cf8b02;
-}
-
-.listing-type {
-  margin-top: 2em;
-}
-
-.listing-type strong {
-  font-weight: 900;
-  color: #000;
-}
-
-.listing-type ul {
-  list-style: disc;
-  padding: 0 0 0 17px;
-}
-
-.single.single-upcoming_projects .acf-map {
-  margin-top: 5px;
-}
-
-.single-upcoming_projects .et_pb_button {
-  background-color: transparent;
-  color: #000 !important;
-}
-
-.single-upcoming_projects .et_pb_button:hover {
-  background-color: #cf8b02;
-  border-color: #cf8b02 !important;
-}
-
-.page {
-  background-color: #fff;
-}
-
-.photo-gallery {
-  border: 1px solid #ccc;
-}
-
 #cover {
   background: #000;
   position: fixed;
@@ -2073,6 +1942,137 @@ img[src="https://blackbaygroup.ca/wp-content/themes/blackbay/includes/img/black-
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
   visibility: visible;
+}
+
+.button, button span {
+  display: inline-block;
+  padding: 10px;
+}
+
+.occupancy-date {
+  border-radius: 5px;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px 8px;
+  position: relative;
+  text-transform: uppercase;
+  font: 700 15px/1em "proxima-nova", Proxima Nova, sans-serif;
+  text-align: center;
+  display: block;
+  border: 2px solid #fff;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.cta-button.button {
+  padding: 0;
+  margin: 25px 0 0;
+}
+
+#cta {
+  clear: left;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+#cta:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+#cta .one-half:first-child {
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 60%;
+}
+
+/*
+.cta {
+	float: left;
+	width: 60%;
+	position: relative;
+	left: 60%;
+	overflow: hidden;
+}
+*/
+body:not(.wp-admin) button .hamburger-inner, body:not(.wp-admin) button.hamburger span {
+  padding: 0;
+  display: table-cell;
+}
+
+#about {
+  padding-bottom: 10%;
+}
+
+.headline h1 {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  margin-bottom: 30px;
+  font-size: 80px;
+  max-width: none;
+}
+
+.headline.align-right h1 {
+  max-width: none;
+  text-align: left;
+  right: auto;
+}
+
+.occupancy-date {
+  margin: 2em 0 1em;
+  padding: 1em;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+}
+
+.occupancy-date span, .half a {
+  color: #cf8b02;
+}
+
+.listing-type {
+  margin-top: 2em;
+}
+
+.listing-type strong {
+  font-weight: 900;
+  color: #000;
+}
+
+.listing-type ul {
+  list-style: disc;
+  padding: 0 0 0 17px;
+}
+
+.single.single-upcoming_projects .acf-map {
+  margin-top: 5px;
+}
+
+.single-upcoming_projects .et_pb_button {
+  background-color: transparent;
+  color: #000 !important;
+}
+
+.single-upcoming_projects .et_pb_button:hover {
+  background-color: #cf8b02;
+  border-color: #cf8b02 !important;
+}
+
+.page {
+  background-color: #fff;
+}
+
+.photo-gallery {
+  border: 1px solid #ccc;
 }
 
 @media (min-width: 1280px) {
