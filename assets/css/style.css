@@ -263,6 +263,74 @@ body:not(.wp-admin) button .hamburger-inner, body:not(.wp-admin) button.hamburge
   display: table-cell;
 }
 
+#about {
+  padding-bottom: 10%;
+}
+
+.headline h1 {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  margin-bottom: 30px;
+  font-size: 80px;
+  max-width: none;
+}
+
+.headline.align-right h1 {
+  max-width: none;
+  text-align: left;
+  right: auto;
+}
+
+.occupancy-date {
+  margin: 2em 0 1em;
+  padding: 1em;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+}
+
+.occupancy-date span, .half a {
+  color: #cf8b02;
+}
+
+.listing-type {
+  margin-top: 2em;
+}
+
+.listing-type strong {
+  font-weight: 900;
+  color: #000;
+}
+
+.listing-type ul {
+  list-style: disc;
+  padding: 0 0 0 17px;
+}
+
+.single.single-upcoming_projects .acf-map {
+  margin-top: 5px;
+}
+
+.single-upcoming_projects .et_pb_button {
+  background-color: transparent;
+  color: #000 !important;
+}
+
+.single-upcoming_projects .et_pb_button:hover {
+  background-color: #cf8b02;
+  border-color: #cf8b02 !important;
+}
+
+.page {
+  background-color: #fff;
+}
+
+.photo-gallery {
+  border: 1px solid #ccc;
+}
+
 #cover {
   background: #000;
   position: fixed;
