@@ -104,6 +104,10 @@ html, body {
   position: relative;
 }
 
+html > body.wp-admin, html > body.login {
+  background-color: #f0f0f1 !important;
+}
+
 body #main-header {
   background: #000;
 }
@@ -2086,6 +2090,18 @@ img[src="https://blackbaygroup.ca/wp-content/themes/blackbay/includes/img/black-
   }
   .team-member {
     margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1081px) {
+  .version-3 nav ul ul li {
+    text-align: right;
+  }
+  nav .sub-menu {
+    width: auto;
+    white-space: nowrap;
+    left: auto;
+    right: 0;
   }
 }
 

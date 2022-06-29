@@ -17,3 +17,7 @@ html, body {
 	width: 50%;
 	position: relative;
 }
+
+html > body.wp-admin, html > body.login {
+    background-color: #f0f0f1 !important;
+}

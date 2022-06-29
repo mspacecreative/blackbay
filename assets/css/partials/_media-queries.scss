@@ -20,6 +20,18 @@
 	}
 }
 
+@media (min-width: 1081px) {
+	.version-3 nav ul ul li {
+		text-align: right;
+	}
+	nav .sub-menu {
+		width: auto;
+		white-space: nowrap;
+		left: auto;
+		right: 0;
+	}
+}
+
 @media (max-width: 1080px) {
 	.headline {
 		font-size: 80px;
