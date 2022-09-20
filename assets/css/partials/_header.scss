@@ -29,7 +29,7 @@ body.home #main-header {
 	width: 90%;
 }
 
-h2 {
+body:not(.wp-admin) h2 {
 	font-size: 30px;
 	text-transform: uppercase;
 	font-weight: 900;
