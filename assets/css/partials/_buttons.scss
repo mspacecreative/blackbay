@@ -1,4 +1,4 @@
-body:not(.wp-admin) .button, body:not(.wp-admin) button span {
+body:where(:not(.wp-admin, .login)) .button, body:where(:not(.wp-admin, .login)) button span {
 	display: inline-block;
 	padding: 10px;
 }
