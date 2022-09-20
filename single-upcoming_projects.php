@@ -52,48 +52,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					} // end if
 					?>
 				</div>
-				
-				<?php 
-				$terms = get_the_terms($post->ID, 'listing_type');
-				
-				if ($terms) {
-				
-				echo 
-				'<div class="listing-type">
-					<p><strong>' . __('Listing type:') . '</strong></p>
-					<ul>';
 
-					foreach ( $terms as $term ) {
-						echo 
-						'<li>' . $term->name . '</li>';
-					} 
-					echo 
-					'</ul>
-				</div>';
-				
-				} ?>
-				
-				<?php if ( have_rows('external_links') ): while ( have_rows('external_links') ): the_row();
-				$label = get_sub_field('button_label');
-				$label = ($label) ? $label : 'View renderings';
-				$link = get_sub_field('button_link'); ?>
-				<a class="et_pb_button" style="display: inline-block; margin-top: 2em;" href="<?php echo $link ?>" target="_blank" rel="noopener"><?php echo $label ?></a>
-				<?php endwhile; endif; ?>
-				
-				<br>
-				
-				<?php if( have_rows('estimated_occupancy_date') ): ?>
-				<?php while( have_rows('estimated_occupancy_date') ): the_row();
-				$month = get_sub_field('month'); 
-				$year = get_sub_field('year'); ?>
-				
-				<h3 class="occupancy-date">
-					<span><?php echo esc_html_e('Estimated Occupancy Date: '); ?></span><?php echo $month; echo esc_html_e(' '); echo $year; ?>
-				</h3>
-				
-				<?php endwhile; ?>
-				<?php endif; ?>
-				
 				<?php if( have_rows('building_features') ): ?>
 				<!-- BUILDING FEATURES -->
 				<h3 class="line-rule-right"><span>Building Features</span></h3>
@@ -112,6 +71,46 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					</ul>
 				</div>
 				<!-- END BULLET BOX -->
+				<?php endif;
+				
+				$terms = get_the_terms($post->ID, 'listing_type');
+				
+				if ($terms) {
+				
+				echo 
+				'<h3 class="line-rule-right"><span>' . __('Listing type') . '</span></h3>
+				<div class="bullet-box">
+					<ul class="features clearfix">';
+
+					foreach ( $terms as $term ) {
+						echo 
+						'<li>' . $term->name . '</li>';
+					} 
+					echo 
+					'</ul>
+				</div>';
+				
+				}
+				
+				if ( have_rows('external_links') ): while ( have_rows('external_links') ): the_row();
+				$label = get_sub_field('button_label');
+				$label = ($label) ? $label : 'View renderings';
+				$link = get_sub_field('button_link'); ?>
+				<a class="et_pb_button" style="display: inline-block; margin-top: 2em;" href="<?php echo $link ?>" target="_blank" rel="noopener"><?php echo $label ?></a>
+				<?php endwhile; endif; ?>
+				
+				<br>
+				
+				<?php if( have_rows('estimated_occupancy_date') ): ?>
+				<?php while( have_rows('estimated_occupancy_date') ): the_row();
+				$month = get_sub_field('month'); 
+				$year = get_sub_field('year'); ?>
+				
+				<h3 class="occupancy-date">
+					<span><?php echo esc_html_e('Estimated Occupancy Date: '); ?></span><?php echo $month; echo esc_html_e(' '); echo $year; ?>
+				</h3>
+				
+				<?php endwhile; ?>
 				<?php endif; ?>
 					
 				<!-- UNIT INFO -->
