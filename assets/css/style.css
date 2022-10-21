@@ -199,6 +199,10 @@ html > body.login {
   background-color: #f0f0f1 !important;
 }
 
+.wp-admin p {
+  margin: 1em 0;
+}
+
 body #main-header {
   background: #000;
 }
