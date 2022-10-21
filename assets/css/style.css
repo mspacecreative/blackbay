@@ -166,7 +166,7 @@ html {
 }
 
 /* END CSS RESET */
-html {
+html:not(.wp-toolbar) {
   background-color: #000 !important;
 }
 
